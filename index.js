@@ -62,11 +62,11 @@ client.on('message', message => {
 })
 
 client.on("guildMemberAdd", member => {
-    const welcomeChannel = member.guild.channels.cache.find(channel => channel.id === "756190331845869628")
+    const welcomeChannel = member.guild.channels.cache.find(channel => channel.id === "id")
     welcomeChannel.send(`${member} a intrat pe server! Avatarul lui este: ${member.user.displayAvatarURL()}`)
 })
 client.on("guildMemberRemove", member => {
-    const welcomeChannel = member.guild.channels.cache.find(channel => channel.id === "756190331845869628")
+    const welcomeChannel = member.guild.channels.cache.find(channel => channel.id === "id")
     welcomeChannel.send(`${member} a iesit de pe server! Avatarul lui a fost: ${member.user.displayAvatarURL()}`)
 })
 client.on('message', async message => {
